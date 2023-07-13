@@ -1,0 +1,36 @@
+/* based on one dark theme */
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body.dark-theme {
+  --background: #282c34;
+  --surface: #21252b;
+  --accent: #7eb8ee;
+  --text: #dcdcdc;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+}
+
+body.light-theme {
+  --background: #e5e9f0;
+  --surface: #d8dee9;
+  --accent: #88c0d0;
+  --text: #4c566a;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+}
+
+#__nuxt {
+  height: 100%;
+}
