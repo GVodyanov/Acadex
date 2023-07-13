@@ -38,7 +38,6 @@ import { tags } from "@/assets/config.js";
 }
 
 h2 {
-  font-style: italic;
   margin-bottom: 2rem;
 }
 
