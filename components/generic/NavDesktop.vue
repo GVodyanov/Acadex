@@ -10,18 +10,18 @@ var expand = ref(false);
         <NuxtIcon name="BookBookmark" id="main" />
         <span v-show="expand" id="title">Acadex</span>
       </NuxtLink>
-      <div class="nav-element">
+      <NuxtLink to="/trending" class="nav-element">
         <NuxtIcon name="TrendUp" />
         <span v-show="expand">Trending</span>
-      </div>
+      </NuxtLink>
       <NuxtLink to="/subjects" class="nav-element">
         <NuxtIcon name="Graph" />
         <span v-show="expand">Subjects</span>
       </NuxtLink>
-      <div class="nav-element">
+      <NuxtLink to="/search" class="nav-element">
         <NuxtIcon name="FileSearch" />
         <span v-show="expand">Search</span>
-      </div>
+      </NuxtLink>
       <div class="nav-element">
         <NuxtIcon name="Calculator" />
         <span v-show="expand">Calculators</span>
@@ -93,7 +93,6 @@ a {
   flex-direction: column;
   gap: 1.5rem;
 }
-
 </style>
 
 <style>
@@ -106,5 +105,4 @@ a {
   height: 2.3rem;
   width: 2.3rem;
 }
-
 </style>

@@ -8,8 +8,14 @@ let cutTags = tags.slice(0, 6)
 
 <template>
   <div id="tags-wrapper">
-    <h2>Recently posted</h2>
+    <div class="title">
+      <h2>
+        <NuxtIcon name="ClockCountdown" />
+        Recently posted
+      </h2>
 
+      <NuxtIcon name="ArrowRight" />
+    </div>
     <div class="tags">
       <GenericPreview v-for="tag in cutTags" :tag="tag">
         <template v-slot:title>{{ tag }}</template>
@@ -20,7 +26,14 @@ let cutTags = tags.slice(0, 6)
       </GenericPreview>
     </div>
 
-    <h2>Most liked</h2>
+    <div class="title">
+      <h2>
+        <NuxtIcon name="Like" />
+        Most liked
+      </h2>
+
+      <NuxtIcon name="ArrowRight" />
+    </div>
     <div class="tags">
       <GenericPreview v-for="tag in cutTags" :tag="tag">
         <template v-slot:title>{{ tag }}</template>
@@ -31,7 +44,14 @@ let cutTags = tags.slice(0, 6)
       </GenericPreview>
     </div>
 
-    <h2>Most viewed</h2>
+    <div class="title">
+      <h2>
+        <NuxtIcon name="Eye" />
+        Most viewed
+      </h2>
+
+      <NuxtIcon name="ArrowRight" />
+    </div>
     <div class="tags">
       <GenericPreview v-for="tag in cutTags" :tag="tag">
         <template v-slot:title>{{ tag }}</template>
@@ -43,8 +63,14 @@ let cutTags = tags.slice(0, 6)
     </div>
 
 
-    <h2>Top authors</h2>
+    <div class="title">
+      <h2>
+        <NuxtIcon name="Author" />
+        Top authors
+      </h2>
 
+      <NuxtIcon name="ArrowRight" />
+    </div>
   </div>
 </template>
 
@@ -66,8 +92,12 @@ let cutTags = tags.slice(0, 6)
   margin-bottom: 3rem;
 }
 
-h2 {
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+.title {
+  margin: 1rem;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 2px solid color-mix(in srgb, currentColor 50%, transparent);
 }
 </style>

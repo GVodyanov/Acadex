@@ -1,9 +1,8 @@
 <template>
-<div id="input-wrapper">
-  <NuxtIcon name="Search" id="home-input-icon"/>
-  <input type="text" placeholder="Search for anything">
-</div>
-
+  <div id="input-wrapper">
+    <NuxtIcon name="Search" id="home-input-icon" />
+    <input type="text" placeholder="Search for anything">
+  </div>
 </template>
 
 <style scoped>

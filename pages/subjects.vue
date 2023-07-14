@@ -34,11 +34,12 @@ import { tags } from "@/assets/config.js";
   row-gap: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
-  margin-bottom: 2rem;
+  margin: 1rem;
 }
 
 h2 {
   margin-bottom: 2rem;
+  margin-left: 1rem;
 }
 
 </style>
