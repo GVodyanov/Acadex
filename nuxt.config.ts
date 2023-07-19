@@ -4,12 +4,7 @@ export default defineNuxtConfig({
   
 
   runtimeConfig: {
-    // The private keys which are only available server-side
-    apiSecret: '123',
-    // Keys within public are also exposed client-side
-    public: {
-      apiBase: '/api'
-    }
+    MONGO_URI: process.env.MONGO_URI,
   },
 
   css: ['~/assets/css/main.css'],
@@ -19,6 +14,10 @@ export default defineNuxtConfig({
       Inter: true,
       Comfortaa: true,
     }
+  },
+
+  nitro: {
+    plugins: ['@/server/db/index.js'],
   },
 
   modules: ['@nuxtjs/google-fonts', 'nuxt-icons']

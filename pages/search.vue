@@ -10,7 +10,7 @@
     <GenericInput />
 
     <div id="filter-wrapper">
-
+      <SearchSort />
     </div>
 
   </div>
