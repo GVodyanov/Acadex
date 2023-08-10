@@ -11,11 +11,13 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/google-fonts": "^3.0.1",
+    "@pinia/nuxt": "^0.4.11",
     "@types/node": "^18",
     "nuxt": "^3.6.1",
     "nuxt-icons": "^3.2.1"
   },
   "dependencies": {
-    "mongoose": "^7.3.4"
+    "mongoose": "^7.3.4",
+    "pinia": "^2.1.6"
   }
 }
