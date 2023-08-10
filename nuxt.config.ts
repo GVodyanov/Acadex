@@ -11,7 +11,7 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      Inter: true,
+      Inter: [400, 800],
       Comfortaa: true,
     }
   },
@@ -20,5 +20,5 @@ export default defineNuxtConfig({
     plugins: ['@/server/db/index.js'],
   },
 
-  modules: ['@nuxtjs/google-fonts', 'nuxt-icons']
+  modules: ['@nuxtjs/google-fonts', 'nuxt-icons', '@pinia/nuxt']
 })
