@@ -1,22 +1,14 @@
-import {ArticleModel} from "~~/server/models/Article.model";
+import { ArticleModel } from "~~/server/models/Article.model";
 
 export default defineEventHandler(async (event) => {
 	// Get data form body
 	const body = await readBody(event);
 
-	// validate
-	let { value, error } = ArticleSchema.validate(body);
-	if (error) {
-		throw createError({
-			message: error.message.replace(/"/g, ""),
-			statusCode: 400,
-			fatal: false,
-		});
-	}
+	const submittedArticle = new ArticleModel(body);
 
 	// create author
 	try {
-		await ArticleModel.create(body);
+		await submittedArticle.save();
 		return { message: true };
 	} catch (e) {
 		throw createError({
